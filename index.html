@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional portfolio of Skandhan M U - AI & Robotics Engineer, Machine Learning Enthusiast, and Python Developer. Exploring innovative systems in AgriTech and Smart Automation.">
+    <title>Skandhan M U | AI & Robotics Engineer Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Interactive Neural Network Canvas Background -->
+    <canvas id="neural-canvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div id="custom-cursor"></div>
+    <div id="custom-cursor-dot"></div>
+
+    <!-- Floating Decor/Background Objects (AI & Robotics Inspired SVG icons) -->
+    <div class="floating-icons-container">
+        <!-- Floating Python Icon -->
+        <div class="floating-icon icon-python" style="top: 15%; left: 10%; animation-delay: 0s;">
+            <i class="fab fa-python"></i>
+        </div>
+        <!-- Floating AI/Brain Icon -->
+        <div class="floating-icon icon-ai" style="top: 25%; right: 12%; animation-delay: 1.5s;">
+            <i class="fa-solid fa-brain"></i>
+        </div>
+        <!-- Floating Robotics Icon -->
+        <div class="floating-icon icon-robotics" style="bottom: 30%; left: 8%; animation-delay: 3s;">
+            <i class="fa-solid fa-robot"></i>
+        </div>
+        <!-- Floating ML Icon -->
+        <div class="floating-icon icon-ml" style="bottom: 20%; right: 15%; animation-delay: 4.5s;">
+            <i class="fa-solid fa-network-wired"></i>
+        </div>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#home" class="logo">
+                Skandhan <span class="logo-accent">M U</span>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Switcher -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Switch Theme">
+                    <i class="fa-solid fa-palette"></i>
+                </button>
+                <a href="./resume.pdf" target="_blank" class="btn btn-nav btn-glow">
+                    <i class="fa-solid fa-download"></i> CV
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION MENU -->
+    <div class="mobile-nav">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#achievements" class="mobile-nav-link">Achievements</a>
+        <a href="#certifications" class="mobile-nav-link">Certifications</a>
+        <a href="#education" class="mobile-nav-link">Education</a>
+        <a href="#resume" class="mobile-nav-link">Resume</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <a href="./resume.pdf" target="_blank" class="btn btn-primary btn-block text-center mt-4">
+            <i class="fa-solid fa-file-pdf"></i> View Resume
+        </a>
+    </div>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-greeting reveal-slide-up">
+                        <span class="badge-tech">AI & Robotics Specialist</span>
+                    </div>
+
+                    <h1 class="hero-title reveal-slide-up">
+                        SKANDHAN M U
+                    </h1>
+
+                    <div class="hero-subtitle-container reveal-slide-up">
+                        <span class="typewriter-prefix">I'm a </span>
+                        <span class="typewriter-text" id="typewriter"></span>
+                        <span class="typewriter-cursor">|</span>
+                    </div>
+
+                    <p class="hero-tagline reveal-slide-up">
+                        "Transforming innovative ideas into intelligent solutions through Artificial Intelligence,
+                        Robotics, and Smart Automation."
+                    </p>
+
+                    <div class="hero-buttons reveal-slide-up">
+                        <a href="#projects" class="btn btn-primary btn-glow">
+                            <i class="fa-solid fa-rocket"></i> Explore My Projects
+                        </a>
+                        <a href="#resume" class="btn btn-secondary">
+                            <i class="fa-solid fa-file-pdf"></i> Resume Preview
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fa-solid fa-paper-plane"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Animated Stats Counter Grid -->
+                <div class="hero-stats-grid reveal-fade-in">
+                    <div class="stat-card glass-panel" data-tilt>
+                        <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-target="1">0</h3>
+                            <span class="stat-plus">+</span>
+                            <p class="stat-label">Innovation Award</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card glass-panel" data-tilt>
+                        <div class="stat-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-target="5">0</h3>
+                            <span class="stat-plus">+</span>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card glass-panel" data-tilt>
+                        <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-target="10">0</h3>
+                            <span class="stat-plus">+</span>
+                            <p class="stat-label">Certifications</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card glass-panel" data-tilt>
+                        <div class="stat-icon"><i class="fa-solid fa-seedling"></i></div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-target="2">0</h3>
+                            <span class="stat-label">AgriTech Projects</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card glass-panel" data-tilt>
+                        <div class="stat-icon"><i class="fa-solid fa-leaf"></i></div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-target="1">0</h3>
+                            <span class="stat-label">Sustainability Project</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card glass-panel" data-tilt>
+                        <div class="stat-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <div class="stat-info">
+                            <h4 class="stat-text-label">AI & Robotics</h4>
+                            <p class="stat-label">Core Specialization</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down-indicator">
+                <a href="#about" aria-label="Scroll to About Me">
+                    <span class="mouse-icon">
+                        <span class="wheel"></span>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ABOUT ME SECTION -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-title-wrapper reveal-fade-in">
+                    <span class="section-subtitle">Biography</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-visual reveal-slide-right">
+                        <div class="visual-card-glass glass-panel">
+                            <div class="visual-ai-core">
+                                <div class="core-orbit core-orbit-1"></div>
+                                <div class="core-orbit core-orbit-2"></div>
+                                <div class="core-orbit core-orbit-3"></div>
+                                <div class="core-center"><i class="fa-solid fa-robot"></i></div>
+                            </div>
+                            <div class="visual-details">
+                                <h3>Skandhan M U</h3>
+                                <p>Presidency University, Bengaluru</p>
+                                <span class="badge-pulse">Open for Internships</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-text reveal-slide-left">
+                        <p class="lead-text">
+                            I am a third-year Information Science and Engineering student specializing in
+                            <strong>Artificial Intelligence and Robotics</strong> at Presidency University. I am
+                            passionate about building intelligent systems that solve real-world challenges through
+                            Artificial Intelligence, Machine Learning, Robotics, IoT, and Smart Automation.
+                        </p>
+                        <p>
+                            My experience in innovation competitions and technical projects has strengthened my ability
+                            to transform ideas into impactful solutions. I continuously strive to expand my expertise
+                            through practical implementation, certifications, and emerging technologies.
+                        </p>
+                        <p>
+                            My goal is to contribute to the advancement of AI-driven systems that improve industries
+                            such as agriculture, sustainability, and intelligent automation.
+                        </p>
+
+                        <div class="personal-details-row">
+                            <div class="detail-item">
+                                <span class="detail-name">Location:</span>
+                                <span class="detail-value">Bengaluru, India</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-name">Email:</span>
+                                <span class="detail-value"><a
+                                        href="mailto:skandhanmu128@gmail.com">skandhanmu128@gmail.com</a></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-name">Status:</span>
+                                <span class="detail-value">3rd Year B.Tech (ISE)</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-name">Phone:</span>
+                                <span class="detail-value"><a href="tel:+919113042969">+91 9113042969</a></span>
+                            </div>
+                        </div>
+
+                        <div class="about-actions">
+                            <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Get in
+                                Touch</a>
+                            <a href="./resume.pdf" target="_blank" class="btn btn-outline"><i
+                                    class="fa-solid fa-file-pdf"></i> View Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-title-wrapper reveal-fade-in">
+                    <span class="section-subtitle">Competencies</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="skill-category-card glass-panel reveal-slide-up" data-tilt>
+                        <div class="card-glow-element"
+                            style="background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(0, 212, 255, 0.15) 0%, transparent 60%);">
+                        </div>
+                        <div class="skill-header">
+                            <div class="skill-icon icon-blue"><i class="fa-solid fa-code"></i></div>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>
+                                <div class="skill-info">
+                                    <span>Python</span>
+                                    <span class="skill-percentage">Advanced</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-blue" style="width: 90%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Web Development -->
+                    <div class="skill-category-card glass-panel reveal-slide-up" style="animation-delay: 0.1s;"
+                        data-tilt>
+                        <div class="card-glow-element"
+                            style="background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(139, 92, 246, 0.15) 0%, transparent 60%);">
+                        </div>
+                        <div class="skill-header">
+                            <div class="skill-icon icon-purple"><i class="fa-solid fa-laptop-code"></i></div>
+                            <h3>Web Development</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>
+                                <div class="skill-info">
+                                    <span>HTML / CSS</span>
+                                    <span class="skill-percentage">Intermediate</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-purple" style="width: 85%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-info">
+                                    <span>JavaScript</span>
+                                    <span class="skill-percentage">Intermediate</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-purple" style="width: 80%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-info">
+                                    <span>Frontend Development</span>
+                                    <span class="skill-percentage">Intermediate</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-purple" style="width: 78%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Artificial Intelligence -->
+                    <div class="skill-category-card glass-panel reveal-slide-up" style="animation-delay: 0.2s;"
+                        data-tilt>
+                        <div class="card-glow-element"
+                            style="background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(0, 212, 255, 0.15) 0%, transparent 60%);">
+                        </div>
+                        <div class="skill-header">
+                            <div class="skill-icon icon-blue"><i class="fa-solid fa-brain"></i></div>
+                            <h3>Artificial Intelligence</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>
+                                <div class="skill-info">
+                                    <span>Machine Learning</span>
+                                    <span class="skill-percentage">Intermediate</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-blue" style="width: 85%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-info">
+                                    <span>Artificial Intelligence</span>
+                                    <span class="skill-percentage">Intermediate</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-blue" style="width: 85%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-info">
+                                    <span>Computer Vision</span>
+                                    <span class="skill-percentage">Foundational</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-blue" style="width: 70%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-info">
+                                    <span>Data Analysis</span>
+                                    <span class="skill-percentage">Intermediate</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-blue" style="width: 80%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skill-category-card glass-panel reveal-slide-up" style="animation-delay: 0.3s;"
+                        data-tilt>
+                        <div class="card-glow-element"
+                            style="background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(139, 92, 246, 0.15) 0%, transparent 60%);">
+                        </div>
+                        <div class="skill-header">
+                            <div class="skill-icon icon-purple"><i class="fa-solid fa-database"></i></div>
+                            <h3>Database Technologies</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>
+                                <div class="skill-info">
+                                    <span>DBMS</span>
+                                    <span class="skill-percentage">Intermediate</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-purple" style="width: 82%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-info">
+                                    <span>MySQL</span>
+                                    <span class="skill-percentage">Intermediate</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill fill-purple" style="width: 80%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Dev Tools -->
+                    <div class="skill-category-card glass-panel reveal-slide-up" style="animation-delay: 0.4s;"
+                        data-tilt>
+                        <div class="card-glow-element"
+                            style="background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(0, 212, 255, 0.15) 0%, transparent 60%);">
+                        </div>
+                        <div class="skill-header">
+                            <div class="skill-icon icon-blue"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                            <h3>Development Tools</h3>
+                        </div>
+                        <ul class="skill-list flex-skill-tags">
+                            <li class="skill-tag">PyCharm</li>
+                            <li class="skill-tag">VS Code</li>
+                            <li class="skill-tag">Jupyter Notebook</li>
+                            <li class="skill-tag">GitHub</li>
+                        </ul>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skill-category-card glass-panel reveal-slide-up" style="animation-delay: 0.5s;"
+                        data-tilt>
+                        <div class="card-glow-element"
+                            style="background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(139, 92, 246, 0.15) 0%, transparent 60%);">
+                        </div>
+                        <div class="skill-header">
+                            <div class="skill-icon icon-purple"><i class="fa-solid fa-people-group"></i></div>
+                            <h3>Soft Skills</h3>
+                        </div>
+                        <ul class="skill-list flex-skill-tags">
+                            <li class="skill-tag">Leadership</li>
+                            <li class="skill-tag">Team Collaboration</li>
+                            <li class="skill-tag">Problem Solving</li>
+                            <li class="skill-tag">Critical Thinking</li>
+                            <li class="skill-tag">Innovation</li>
+                            <li class="skill-tag">Communication</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-title-wrapper reveal-fade-in">
+                    <span class="section-subtitle">Portfolio Showcase</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <article class="project-card glass-panel reveal-slide-up" data-tilt>
+                        <div class="card-glow-element"></div>
+                        <div class="project-header">
+                            <div class="project-achievement-badge">
+                                <i class="fa-solid fa-trophy text-gold"></i> First Prize Winner - Idea Spark
+                            </div>
+                            <h3 class="project-title">Automated Seeding and Weeding System</h3>
+                            <span class="project-category">AgriTech & Robotics</span>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-statement">
+                                <div class="statement-title">Problem:</div>
+                                <p>Traditional farming methods involve extensive manual labor and inefficient planting
+                                    practices.</p>
+                            </div>
+
+                            <div class="project-statement">
+                                <div class="statement-title">Solution:</div>
+                                <p>Developed an intelligent agricultural automation system capable of automated seed
+                                    placement and weed detection.</p>
+                            </div>
+
+                            <div class="project-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li><i class="fa-solid fa-circle-check text-blue"></i> Automated seed sowing</li>
+                                    <li><i class="fa-solid fa-circle-check text-blue"></i> Weed identification &
+                                        classification</li>
+                                    <li><i class="fa-solid fa-circle-check text-blue"></i> Smart farming automation
+                                        algorithms</li>
+                                    <li><i class="fa-solid fa-circle-check text-blue"></i> Improved overall agricultural
+                                        efficiency</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">AI Concepts</span>
+                                <span class="tech-tag">Robotics</span>
+                                <span class="tech-tag">Sensors</span>
+                            </div>
+                            <div class="project-impact-box">
+                                <strong>Impact:</strong> Enhanced farming productivity while reducing manual effort.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card glass-panel reveal-slide-up" style="animation-delay: 0.1s;" data-tilt>
+                        <div class="card-glow-element"></div>
+                        <div class="project-header">
+                            <div class="project-achievement-badge">
+                                <i class="fa-solid fa-leaf text-green"></i> AgriTech Innovation
+                            </div>
+                            <h3 class="project-title">Chip to Crop – Smart Vegetable Sorting & Grading</h3>
+                            <span class="project-category">Computer Vision & AI</span>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-statement">
+                                <div class="statement-title">Problem:</div>
+                                <p>Manual vegetable grading processes are inconsistent, subjective, and time-consuming
+                                    for farms.</p>
+                            </div>
+
+                            <div class="project-statement">
+                                <div class="statement-title">Solution:</div>
+                                <p>Developed an AI-powered sorting and grading system capable of evaluating vegetable
+                                    quality automatically through image classification.</p>
+                            </div>
+
+                            <div class="project-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li><i class="fa-solid fa-circle-check text-purple"></i> Automated computer vision
+                                        quality assessment</li>
+                                    <li><i class="fa-solid fa-circle-check text-purple"></i> Multi-class automated
+                                        grading index</li>
+                                    <li><i class="fa-solid fa-circle-check text-purple"></i> Intelligent sorting
+                                        mechanical logic</li>
+                                    <li><i class="fa-solid fa-circle-check text-purple"></i> Agricultural supply chain
+                                        optimization integration</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">Computer Vision</span>
+                            </div>
+                            <div class="project-impact-box">
+                                <strong>Impact:</strong> Improved efficiency and accuracy in vegetable classification.
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card glass-panel reveal-slide-up" style="animation-delay: 0.2s;" data-tilt>
+                        <div class="card-glow-element"></div>
+                        <div class="project-header">
+                            <div class="project-achievement-badge">
+                                <i class="fa-solid fa-recycle text-purple"></i> Idea Spark 2.0 Participant
+                            </div>
+                            <h3 class="project-title">Smart Bin System</h3>
+                            <span class="project-category">IoT & Smart Sustainability</span>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-statement">
+                                <div class="statement-title">Problem:</div>
+                                <p>Conventional waste collection follows fixed schedules, leading to overflow, fuel
+                                    wastage, and high logistics costs.</p>
+                            </div>
+
+                            <div class="project-statement">
+                                <div class="statement-title">Solution:</div>
+                                <p>Designed an IoT-enabled smart waste management system equipped with fill-sensors and
+                                    route optimization algorithms.</p>
+                            </div>
+
+                            <div class="project-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li><i class="fa-solid fa-circle-check text-blue"></i> Real-time fill-level
+                                        monitoring via distance sensors</li>
+                                    <li><i class="fa-solid fa-circle-check text-blue"></i> Multi-node routing
+                                        optimization algorithm</li>
+                                    <li><i class="fa-solid fa-circle-check text-blue"></i> Efficient collection
+                                        scheduling dispatcher</li>
+                                    <li><i class="fa-solid fa-circle-check text-blue"></i> Responsive smart dashboard
+                                        visualization</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">IoT</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Optimization Algorithms</span>
+                            </div>
+                            <div class="project-impact-box">
+                                <strong>Impact:</strong> Reduced operational costs, fuel consumption, and collection
+                                time.
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS SECTION (VERTICAL TIMELINE) -->
+        <section id="achievements" class="achievements-section section-padding">
+            <div class="container">
+                <div class="section-title-wrapper reveal-fade-in">
+                    <span class="section-subtitle">Milestones</span>
+                    <h2 class="section-title">Achievements</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="timeline-container">
+                    <!-- Vertical Timeline Line -->
+                    <div class="timeline-line"></div>
+
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item reveal-slide-up">
+                        <div class="timeline-dot"><i class="fa-solid fa-trophy"></i></div>
+                        <div class="timeline-card glass-panel" data-tilt>
+                            <span class="timeline-badge badge-gold">Winner</span>
+                            <h3 class="timeline-title">First Prize Winner – Idea Spark</h3>
+                            <h4 class="timeline-subtitle">Project: Automated Seeding and Weeding System</h4>
+                            <p class="timeline-desc">
+                                Recognized at Presidency University for developing an innovative smart agriculture
+                                solution targeting manual labor issues. Designed the robotics prototype and automated
+                                sensors workflow.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item reveal-slide-up" style="animation-delay: 0.1s;">
+                        <div class="timeline-dot"><i class="fa-solid fa-leaf"></i></div>
+                        <div class="timeline-card glass-panel" data-tilt>
+                            <span class="timeline-badge badge-blue">Innovation Highlight</span>
+                            <h3 class="timeline-title">AgriTech Innovation Project</h3>
+                            <h4 class="timeline-subtitle">Chip to Crop – Smart Vegetable Grading System</h4>
+                            <p class="timeline-desc">
+                                Engineered a computer vision pipeline with Python and Machine Learning to evaluate
+                                vegetable quality metrics, allowing automatic sorted distributions and grade
+                                classifications.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item reveal-slide-up" style="animation-delay: 0.2s;">
+                        <div class="timeline-dot"><i class="fa-solid fa-recycle"></i></div>
+                        <div class="timeline-card glass-panel" data-tilt>
+                            <span class="timeline-badge badge-purple">Competitor</span>
+                            <h3 class="timeline-title">Participant – Idea Spark 2.0</h3>
+                            <h4 class="timeline-subtitle">Smart Bin System</h4>
+                            <p class="timeline-desc">
+                                Designed an IoT-enabled real-time waste management prototype aiming at environmental
+                                sustainability, routing optimization, and municipal garbage collection planning.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item reveal-slide-up" style="animation-delay: 0.3s;">
+                        <div class="timeline-dot"><i class="fa-solid fa-award"></i></div>
+                        <div class="timeline-card glass-panel" data-tilt>
+                            <span class="timeline-badge badge-cyan">Excellence</span>
+                            <h3 class="timeline-title">Innovation & Technical Excellence</h3>
+                            <h4 class="timeline-subtitle">Continuous Engineering Focus</h4>
+                            <p class="timeline-desc">
+                                Actively participating in technical hackathons, university innovation challenges, and
+                                building experimental robotics and software projects.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS SECTION (CAROUSEL) -->
+        <section id="certifications" class="certifications-section section-padding">
+            <div class="container">
+                <div class="section-title-wrapper reveal-fade-in">
+                    <span class="section-subtitle">Credentials</span>
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="carousel-container-outer reveal-fade-in">
+                    <button class="carousel-nav-btn prev-btn" aria-label="Previous Certification"><i
+                            class="fa-solid fa-chevron-left"></i></button>
+
+                    <div class="carousel-viewport">
+                        <div class="carousel-track">
+
+                            <!-- Cert 1 -->
+                            <div class="certification-card glass-panel">
+                                <div class="cert-badge-icon"><i class="fab fa-python text-blue"></i></div>
+                                <h3>Infosys Python Certification</h3>
+                                <p class="cert-issuer">Infosys Springboard</p>
+                                <div class="cert-divider"></div>
+                                <p class="cert-desc">Advanced Python programming validation including OOPs, data
+                                    structures, algorithms, and application implementation.</p>
+                                <a href="https://springboard.infosys.com" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-outline btn-sm">
+                                    Verify Credential <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+
+                            <!-- Cert 2 -->
+                            <div class="certification-card glass-panel">
+                                <div class="cert-badge-icon"><i class="fa-solid fa-laptop-code text-purple"></i></div>
+                                <h3>Infosys PyCharm Certification</h3>
+                                <p class="cert-issuer">Infosys Springboard</p>
+                                <div class="cert-divider"></div>
+                                <p class="cert-desc">Competency validation in development workflow, debugging, and
+                                    configuration processes using PyCharm IDE.</p>
+                                <a href="https://springboard.infosys.com" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-outline btn-sm">
+                                    Verify Credential <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+
+                            <!-- Cert 3 -->
+                            <div class="certification-card glass-panel">
+                                <div class="cert-badge-icon"><i class="fa-solid fa-graduation-cap text-blue"></i></div>
+                                <h3>Infosys Springboard Certifications</h3>
+                                <p class="cert-issuer">Infosys Springboard Program</p>
+                                <div class="cert-divider"></div>
+                                <p class="cert-desc">Broad validation across multiple technologies, engineering modules,
+                                    and design paradigms in computing.</p>
+                                <a href="https://springboard.infosys.com" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-outline btn-sm">
+                                    Verify Credential <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+
+                            <!-- Cert 4 -->
+                            <div class="certification-card glass-panel">
+                                <div class="cert-badge-icon"><i class="fa-solid fa-brain text-purple"></i></div>
+                                <h3>Artificial Intelligence Courses</h3>
+                                <p class="cert-issuer">Academic & Online Platforms</p>
+                                <div class="cert-divider"></div>
+                                <p class="cert-desc">Comprehensive courses covering AI core representations, state
+                                    spaces, heuristics, search, and logic reasoning.</p>
+                                <a href="#" class="btn btn-outline btn-sm disabled-link">
+                                    Academic Record <i class="fa-solid fa-circle-info"></i>
+                                </a>
+                            </div>
+
+                            <!-- Cert 5 -->
+                            <div class="certification-card glass-panel">
+                                <div class="cert-badge-icon"><i class="fa-solid fa-network-wired text-blue"></i></div>
+                                <h3>Machine Learning Courses</h3>
+                                <p class="cert-issuer">Academic & Online Programs</p>
+                                <div class="cert-divider"></div>
+                                <p class="cert-desc">Validation in classification, regression, clustering models, model
+                                    validations, and pandas/numpy application pipelines.</p>
+                                <a href="#" class="btn btn-outline btn-sm disabled-link">
+                                    Academic Record <i class="fa-solid fa-circle-info"></i>
+                                </a>
+                            </div>
+
+                            <!-- Cert 6 -->
+                            <div class="certification-card glass-panel">
+                                <div class="cert-badge-icon"><i class="fa-solid fa-circle-check text-purple"></i></div>
+                                <h3>Additional Technology Certifications</h3>
+                                <p class="cert-issuer">Presidency University</p>
+                                <div class="cert-divider"></div>
+                                <p class="cert-desc">Various certifications in IoT networks, sensors automation, Git
+                                    version control, and data visualization tools.</p>
+                                <a href="#" class="btn btn-outline btn-sm disabled-link">
+                                    Review Portfolio <i class="fa-solid fa-check"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button class="carousel-nav-btn next-btn" aria-label="Next Certification"><i
+                            class="fa-solid fa-chevron-right"></i></button>
+
+                    <!-- Carousel Indicators -->
+                    <div class="carousel-indicators"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="education-section section-padding">
+            <div class="container">
+                <div class="section-title-wrapper reveal-fade-in">
+                    <span class="section-subtitle">Academic Profile</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="education-card glass-panel reveal-slide-up" data-tilt>
+                    <div class="edu-glow"></div>
+                    <div class="edu-header">
+                        <div class="edu-uni-logo">
+                            <i class="fa-solid fa-university"></i>
+                        </div>
+                        <div class="edu-uni-details">
+                            <h3>Presidency University</h3>
+                            <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Bengaluru, Karnataka, India
+                            </p>
+                        </div>
+                        <div class="edu-period">
+                            <span class="badge-tech">2024 - 2028</span>
+                        </div>
+                    </div>
+
+                    <div class="edu-body">
+                        <div class="edu-degree">
+                            <h4>Bachelor of Technology (B.Tech)</h4>
+                            <p class="edu-branch">Information Science and Engineering (ISE)</p>
+                            <span class="edu-specialization">Specialization: <strong>Artificial Intelligence and
+                                    Robotics</strong></span>
+                        </div>
+
+                        <div class="edu-highlights">
+                            <h5>Key Highlights & Focus:</h5>
+                            <ul>
+                                <li><i class="fa-solid fa-robot"></i> Advanced courseworks in Intelligent Robotic
+                                    systems, Kinematics, Control, and ML.</li>
+                                <li><i class="fa-solid fa-seedling"></i> Winner of Spark Hackathon awards for automation
+                                    models.</li>
+                                <li><i class="fa-solid fa-star"></i> Solid groundings in data analysis, databases, and
+                                    system designs.</li>
+                                <li><i class="fa-solid fa-user-graduate"></i> Current Status: Third-Year Undergraduate
+                                    Student.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CAREER VISION SECTION (LARGE GLOWING QUOTE) -->
+        <section class="vision-section section-padding">
+            <div class="container">
+                <div class="vision-card glass-panel reveal-fade-in">
+                    <div class="quote-mark open-quote">“</div>
+                    <blockquote class="career-vision-text">
+                        I aspire to leverage Artificial Intelligence, Machine Learning, Robotics, and Smart Automation
+                        to create innovative solutions addressing real-world challenges. I aim to contribute to
+                        advancements in intelligent systems that drive positive societal impact across agriculture,
+                        sustainability, and emerging technologies.
+                    </blockquote>
+                    <div class="quote-mark close-quote">”</div>
+                    <div class="vision-author">
+                        <div class="author-line"></div>
+                        <span>Career Vision & Philosophy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESUME SECTION -->
+        <section id="resume" class="resume-section section-padding">
+            <div class="container">
+                <div class="section-title-wrapper reveal-fade-in">
+                    <span class="section-subtitle">Recruiter Hub</span>
+                    <h2 class="section-title">Curriculum Vitae</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="resume-grid">
+                    <div class="resume-visual-mockup glass-panel reveal-slide-right">
+                        <div class="mockup-header">
+                            <span class="dot red-dot"></span>
+                            <span class="dot yellow-dot"></span>
+                            <span class="dot green-dot"></span>
+                            <span class="mockup-title">skandhan_./resume.pdf</span>
+                        </div>
+                        <!-- High Fidelity Mini Resume Visual Preview in CSS -->
+                        <div class="mockup-body">
+                            <div class="resume-preview-header">
+                                <h3>Skandhan M U</h3>
+                                <p>AI & Robotics Engineer</p>
+                                <div class="resume-preview-meta">Bengaluru | +91 9113042969</div>
+                            </div>
+                            <div class="resume-preview-divider"></div>
+                            <div class="resume-preview-sec">
+                                <h4>EDUCATION</h4>
+                                <p><strong>B.Tech ISE (AI & Robotics)</strong> - Presidency University</p>
+                            </div>
+                            <div class="resume-preview-sec">
+                                <h4>PROJECTS</h4>
+                                <p><strong>Automated Seeding and Weeding</strong> (Spark Award Winner)</p>
+                                <p><strong>Chip to Crop</strong> (AgriTech Grading System)</p>
+                                <p><strong>Smart Bin System</strong> (IoT Route Optimization)</p>
+                            </div>
+                            <div class="resume-preview-sec">
+                                <h4>SKILLS</h4>
+                                <p>Python, ML, AI, Computer Vision, DBMS, IoT, Robotics</p>
+                            </div>
+                            <div class="resume-preview-overlay">
+                                <button class="btn btn-primary" id="open-resume-preview-btn">
+                                    <i class="fa-solid fa-eye"></i> Preview Resume
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume-actions-box reveal-slide-left">
+                        <h3 class="resume-heading">Review Credentials</h3>
+                        <p class="resume-desc">
+                            Are you a recruiter seeking engineering talent? Review a detailed copy of my professional
+                            resume, highlighting technical benchmarks, project parameters, innovation medals, and
+                            certification modules.
+                        </p>
+
+                        <div class="resume-buttons-row">
+                            <a href="./resume.pdf" target="_blank" class="btn btn-primary btn-glow btn-lg">
+                                <i class="fa-solid fa-file-pdf"></i> View Full Resume
+                            </a>
+                            <button class="btn btn-secondary btn-lg" id="trigger-preview-btn">
+                                <i class="fa-solid fa-maximize"></i> Fullscreen Preview
+                            </button>
+                        </div>
+
+                        <div class="ats-friendly-badge">
+                            <i class="fa-solid fa-circle-check text-green"></i> ATS-optimized & recruiter-ready
+                            structure
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-title-wrapper reveal-fade-in">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact Information</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Details Card -->
+                    <div class="contact-info-card glass-panel reveal-slide-right" data-tilt>
+                        <div class="card-glow-element"
+                            style="background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(139, 92, 246, 0.15) 0%, transparent 60%);">
+                        </div>
+                        <h3>Let's Connect</h3>
+                        <p class="contact-card-sub">I'm currently looking for internships and engineering role
+                            opportunities. Feel free to reach out via phone, email, or social profiles.</p>
+
+                        <div class="contact-methods">
+                            <!-- Location -->
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="contact-text">
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-value">Bengaluru, Karnataka, India</span>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="contact-text">
+                                    <span class="contact-label">Email Address</span>
+                                    <span class="contact-value"><a
+                                            href="mailto:skandhanmu128@gmail.com">skandhanmu128@gmail.com</a></span>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="contact-text">
+                                    <span class="contact-label">Phone Call</span>
+                                    <span class="contact-value"><a href="tel:+919113042969">+91 9113042969</a></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-networks">
+                            <span class="social-title">Social Channels</span>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/skandhan-m-u-14a007332" target="_blank"
+                                    rel="noopener noreferrer" class="social-circle linkedin-link"
+                                    aria-label="LinkedIn Profile">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="mailto:skandhanmu128@gmail.com" class="social-circle mail-link"
+                                    aria-label="Send Email">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                                <a href="tel:+919113042969" class="social-circle phone-link"
+                                    aria-label="Make Phone Call">
+                                    <i class="fa-solid fa-phone"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Grid -->
+                    <div class="contact-form-card glass-panel reveal-slide-left">
+                        <h3>Send Message</h3>
+                        <form id="contact-form" class="contact-form" action="https://formspree.io/f/placeholder"
+                            method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Full Name</label>
+                                    <input type="text" id="form-name" name="name" required
+                                        placeholder="e.g., Jane Smith">
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email Address</label>
+                                    <input type="email" id="form-email" name="email" required
+                                        placeholder="name@domain.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" name="subject" required
+                                    placeholder="Internship Opportunity / Project Inquiry">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message">Your Message</label>
+                                <textarea id="form-message" name="message" rows="5" required
+                                    placeholder="Write details about the role or project..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-glow btn-block">
+                                <i class="fa-solid fa-paper-plane"></i> Dispatch Message
+                            </button>
+
+                            <div id="form-status" class="form-status-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#home" class="footer-logo">
+                    Skandhan <span class="logo-accent">M U</span>
+                </a>
+                <p class="footer-tagline">"Transforming Ideas into Intelligent Solutions."</p>
+            </div>
+
+            <div class="footer-center">
+                <p class="copyright">
+                    © 2026 Skandhan M U | AI & Robotics Engineer
+                </p>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/skandhan-m-u-14a007332" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:skandhanmu128@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:+919113042969" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button id="back-to-top" aria-label="Back to top" class="back-to-top-btn">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- FULLSCREEN RESUME MODAL PREVIEW -->
+    <div id="resume-modal" class="modal">
+        <div class="modal-content glass-panel">
+            <div class="modal-header">
+                <h3>Skandhan M U - Resume (Preview Mode)</h3>
+                <div class="modal-controls">
+                    <a href=./resume.pdf" target="_blank" class="btn btn-primary btn-sm">
+                        <i class="fa-solid fa-file-pdf"></i> Open Full Resume
+                    </a>
+                    <button class="close-modal-btn" aria-label="Close Modal">&times;</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <!-- Visual simulation of the detailed resume in HTML/CSS -->
+                <div class="visual-resume-document">
+                    <div class="resume-doc-header">
+                        <h1>SKANDHAN M U</h1>
+                        <p class="resume-doc-title">AI & Robotics Engineer | Python Developer</p>
+                        <div class="resume-doc-contact">
+                            <span><i class="fa-solid fa-envelope"></i> skandhanmu128@gmail.com</span> |
+                            <span><i class="fa-solid fa-phone"></i> +91 9113042969</span> |
+                            <span><i class="fa-solid fa-location-dot"></i> Bengaluru, Karnataka</span> |
+                            <span><i class="fab fa-linkedin"></i> linkedin.com/in/skandhan-m-u-14a007332</span>
+                        </div>
+                    </div>
+
+                    <div class="resume-doc-section">
+                        <h2 class="doc-sec-title">Education</h2>
+                        <div class="doc-item">
+                            <div class="doc-item-header">
+                                <strong>Presidency University, Bengaluru</strong>
+                                <span>2024 - 2028</span>
+                            </div>
+                            <p>Bachelor of Technology (B.Tech) - Information Science and Engineering (ISE)</p>
+                            <p>Specialization in Artificial Intelligence and Robotics | Current Year: 3rd Year</p>
+                        </div>
+                    </div>
+
+                    <div class="resume-doc-section">
+                        <h2 class="doc-sec-title">Technical Skills</h2>
+                        <div class="doc-skills-grid">
+                            <div><strong>Languages:</strong> Python</div>
+                            <div><strong>Web Dev:</strong> HTML, CSS, JavaScript, Frontend Development</div>
+                            <div><strong>AI & ML:</strong> Machine Learning, Artificial Intelligence, Computer Vision,
+                                Data Analysis</div>
+                            <div><strong>Databases:</strong> DBMS, MySQL</div>
+                            <div><strong>Tools:</strong> PyCharm, VS Code, Jupyter Notebook, GitHub</div>
+                            <div><strong>Soft Skills:</strong> Leadership, Collaboration, Problem Solving, Critical
+                                Thinking, Innovation, Communication</div>
+                        </div>
+                    </div>
+
+                    <div class="resume-doc-section">
+                        <h2 class="doc-sec-title">Key Projects</h2>
+
+                        <div class="doc-item">
+                            <div class="doc-item-header">
+                                <strong>Automated Seeding and Weeding System</strong>
+                                <span>Idea Spark First Prize Winner</span>
+                            </div>
+                            <p><em>Technologies: Python, AI Concepts, Robotics, Sensors</em></p>
+                            <ul>
+                                <li>Developed automated seed sowing mechanical triggers and sensors calibration
+                                    workflows.</li>
+                                <li>Programmed AI models for automatic weed identification and location mappings.</li>
+                                <li>Optimized seeding parameters, decreasing manual planting efforts and improving
+                                    precision.</li>
+                            </ul>
+                        </div>
+
+                        <div class="doc-item">
+                            <div class="doc-item-header">
+                                <strong>Chip to Crop – Smart Vegetable Sorting & Grading System</strong>
+                                <span>AgriTech Innovation Focus</span>
+                            </div>
+                            <p><em>Technologies: Python, Machine Learning, Computer Vision</em></p>
+                            <ul>
+                                <li>Constructed a classification pipeline to categorize vegetables dynamically based on
+                                    color/health.</li>
+                                <li>Assessed quality indexes, reducing sorting cycles and sorting faults.</li>
+                            </ul>
+                        </div>
+
+                        <div class="doc-item">
+                            <div class="doc-item-header">
+                                <strong>Smart Bin System</strong>
+                                <span>Idea Spark 2.0 Participant</span>
+                            </div>
+                            <p><em>Technologies: IoT, Python, Route Optimization Algorithms</em></p>
+                            <ul>
+                                <li>Designed distance-sensor hardware modules to monitor waste fills in real-time.</li>
+                                <li>Programmed shortest-route garbage truck dispatching systems, saving fuel and time.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-doc-section">
+                        <h2 class="doc-sec-title">Achievements</h2>
+                        <ul>
+                            <li><strong>🏆 First Prize Winner – Idea Spark:</strong> Outstanding engineering execution
+                                for agricultural robotics.</li>
+                            <li><strong>♻️ Participant – Idea Spark 2.0:</strong> Sustainability routing optimization
+                                for smart garbage systems.</li>
+                            <li><strong>🚀 Innovation and Technical Excellence:</strong> Winner/contributor in
+                                hackathons and college platforms.</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-doc-section">
+                        <h2 class="doc-sec-title">Certifications</h2>
+                        <p>Infosys Python Certification, Infosys PyCharm Certification, Infosys Springboard
+                            Certifications, Artificial Intelligence Courses, Machine Learning Courses, Additional
+                            Technology Certifications.</p>
+                    </div>
+
+                    <div class="resume-doc-section">
+                        <h2 class="doc-sec-title">Career Vision</h2>
+                        <p>"I aspire to leverage Artificial Intelligence, Machine Learning, Robotics, and Smart
+                            Automation to create innovative solutions addressing real-world challenges..."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
